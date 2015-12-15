@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC139A841BAFCCBB009855C5 /* Sun.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC139A821BAFCCBB009855C5 /* Sun.sks */; };
+		EC139A851BAFCCBB009855C5 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = EC139A831BAFCCBB009855C5 /* spark.png */; };
+		EC139A871BB06582009855C5 /* Icarus.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC139A861BB06582009855C5 /* Icarus.sks */; };
+		EC2798CF1BB33BA500B17A53 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC2798CE1BB33BA500B17A53 /* Explosion.sks */; };
+		EC2C340F1BAA577500BFB4D4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C340E1BAA577500BFB4D4 /* GameScene.swift */; };
+		EC5091261BD400DB007FA30F /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5091251BD400DB007FA30F /* Hero.swift */; };
+		EC7111DF1BD2C11C0077FE98 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7111DE1BD2C11C0077FE98 /* Cloud.swift */; };
+		EC8BA68E1BB6FB2400EE7FC5 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BA68C1BB6FB2400EE7FC5 /* EndGameViewController.swift */; };
+		EC8BA68F1BB6FB2400EE7FC5 /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BA68D1BB6FB2400EE7FC5 /* StartGameViewController.swift */; };
+		ECA7CE761BD4505100DA625C /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7CE751BD4505100DA625C /* HighScore.swift */; };
+		ECA7CE781BD4576100DA625C /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7CE771BD4576100DA625C /* HighScoreController.swift */; };
+		ECA7CE7A1BD4A1AE00DA625C /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7CE791BD4A1AD00DA625C /* HighScoreViewController.swift */; };
+		ECD043F21BCB0718006E6AAC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD043F11BCB0718006E6AAC /* Global.swift */; };
+		ECF6C5481BA9EBFD002B456E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6C5471BA9EBFD002B456E /* AppDelegate.swift */; };
+		ECF6C54D1BA9EBFD002B456E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF6C54B1BA9EBFD002B456E /* Main.storyboard */; };
+		ECF6C54F1BA9EBFD002B456E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF6C54E1BA9EBFD002B456E /* Images.xcassets */; };
+		ECF6C5521BA9EBFD002B456E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF6C5501BA9EBFD002B456E /* LaunchScreen.xib */; };
+		ECF6C55E1BA9EBFE002B456E /* IcarusGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6C55D1BA9EBFE002B456E /* IcarusGameTests.swift */; };
+		ECF6C59C1BAA0AA4002B456E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6C59B1BAA0AA4002B456E /* GameViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF6C5581BA9EBFE002B456E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF6C53A1BA9EBFD002B456E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF6C5411BA9EBFD002B456E;
+			remoteInfo = IcarusGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC139A821BAFCCBB009855C5 /* Sun.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sun.sks; sourceTree = "<group>"; };
+		EC139A831BAFCCBB009855C5 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		EC139A861BB06582009855C5 /* Icarus.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Icarus.sks; sourceTree = "<group>"; };
+		EC2798CE1BB33BA500B17A53 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		EC2C340E1BAA577500BFB4D4 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EC5091251BD400DB007FA30F /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		EC7111DE1BD2C11C0077FE98 /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		EC8BA68C1BB6FB2400EE7FC5 /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		EC8BA68D1BB6FB2400EE7FC5 /* StartGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
+		ECA7CE751BD4505100DA625C /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		ECA7CE771BD4576100DA625C /* HighScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
+		ECA7CE791BD4A1AD00DA625C /* HighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
+		ECD043F11BCB0718006E6AAC /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		ECF6C5421BA9EBFD002B456E /* IcarusGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcarusGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF6C5461BA9EBFD002B456E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF6C5471BA9EBFD002B456E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECF6C54C1BA9EBFD002B456E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECF6C54E1BA9EBFD002B456E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECF6C5511BA9EBFD002B456E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ECF6C5571BA9EBFE002B456E /* IcarusGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcarusGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF6C55C1BA9EBFE002B456E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF6C55D1BA9EBFE002B456E /* IcarusGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcarusGameTests.swift; sourceTree = "<group>"; };
+		ECF6C59B1BAA0AA4002B456E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF6C53F1BA9EBFD002B456E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF6C5541BA9EBFE002B456E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECF6C5391BA9EBFD002B456E = {
+			isa = PBXGroup;
+			children = (
+				ECF6C5441BA9EBFD002B456E /* IcarusGame */,
+				ECF6C55A1BA9EBFE002B456E /* IcarusGameTests */,
+				ECF6C5431BA9EBFD002B456E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF6C5431BA9EBFD002B456E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6C5421BA9EBFD002B456E /* IcarusGame.app */,
+				ECF6C5571BA9EBFE002B456E /* IcarusGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF6C5441BA9EBFD002B456E /* IcarusGame */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6C5471BA9EBFD002B456E /* AppDelegate.swift */,
+				ECF6C5501BA9EBFD002B456E /* LaunchScreen.xib */,
+				ECF6C54B1BA9EBFD002B456E /* Main.storyboard */,
+				EC8BA68D1BB6FB2400EE7FC5 /* StartGameViewController.swift */,
+				ECA7CE791BD4A1AD00DA625C /* HighScoreViewController.swift */,
+				ECF6C59B1BAA0AA4002B456E /* GameViewController.swift */,
+				EC2C340E1BAA577500BFB4D4 /* GameScene.swift */,
+				EC8BA68C1BB6FB2400EE7FC5 /* EndGameViewController.swift */,
+				ECF6C54E1BA9EBFD002B456E /* Images.xcassets */,
+				ECF6C5451BA9EBFD002B456E /* Supporting Files */,
+				EC7111DE1BD2C11C0077FE98 /* Cloud.swift */,
+				ECD043F11BCB0718006E6AAC /* Global.swift */,
+				EC5091251BD400DB007FA30F /* Hero.swift */,
+				ECA7CE751BD4505100DA625C /* HighScore.swift */,
+				ECA7CE771BD4576100DA625C /* HighScoreController.swift */,
+			);
+			path = IcarusGame;
+			sourceTree = "<group>";
+		};
+		ECF6C5451BA9EBFD002B456E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC2798CE1BB33BA500B17A53 /* Explosion.sks */,
+				ECF6C5461BA9EBFD002B456E /* Info.plist */,
+				EC139A821BAFCCBB009855C5 /* Sun.sks */,
+				EC139A831BAFCCBB009855C5 /* spark.png */,
+				EC139A861BB06582009855C5 /* Icarus.sks */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECF6C55A1BA9EBFE002B456E /* IcarusGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6C55D1BA9EBFE002B456E /* IcarusGameTests.swift */,
+				ECF6C55B1BA9EBFE002B456E /* Supporting Files */,
+			);
+			path = IcarusGameTests;
+			sourceTree = "<group>";
+		};
+		ECF6C55B1BA9EBFE002B456E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6C55C1BA9EBFE002B456E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF6C5411BA9EBFD002B456E /* IcarusGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF6C5611BA9EBFE002B456E /* Build configuration list for PBXNativeTarget "IcarusGame" */;
+			buildPhases = (
+				ECF6C53E1BA9EBFD002B456E /* Sources */,
+				ECF6C53F1BA9EBFD002B456E /* Frameworks */,
+				ECF6C5401BA9EBFD002B456E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IcarusGame;
+			productName = IcarusGame;
+			productReference = ECF6C5421BA9EBFD002B456E /* IcarusGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF6C5561BA9EBFE002B456E /* IcarusGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF6C5641BA9EBFE002B456E /* Build configuration list for PBXNativeTarget "IcarusGameTests" */;
+			buildPhases = (
+				ECF6C5531BA9EBFE002B456E /* Sources */,
+				ECF6C5541BA9EBFE002B456E /* Frameworks */,
+				ECF6C5551BA9EBFE002B456E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF6C5591BA9EBFE002B456E /* PBXTargetDependency */,
+			);
+			name = IcarusGameTests;
+			productName = IcarusGameTests;
+			productReference = ECF6C5571BA9EBFE002B456E /* IcarusGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF6C53A1BA9EBFD002B456E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = chase.luke.a;
+				TargetAttributes = {
+					ECF6C5411BA9EBFD002B456E = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = EJKR6DJY6J;
+					};
+					ECF6C5561BA9EBFE002B456E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ECF6C5411BA9EBFD002B456E;
+					};
+				};
+			};
+			buildConfigurationList = ECF6C53D1BA9EBFD002B456E /* Build configuration list for PBXProject "IcarusGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF6C5391BA9EBFD002B456E;
+			productRefGroup = ECF6C5431BA9EBFD002B456E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF6C5411BA9EBFD002B456E /* IcarusGame */,
+				ECF6C5561BA9EBFE002B456E /* IcarusGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF6C5401BA9EBFD002B456E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC139A871BB06582009855C5 /* Icarus.sks in Resources */,
+				EC139A851BAFCCBB009855C5 /* spark.png in Resources */,
+				EC139A841BAFCCBB009855C5 /* Sun.sks in Resources */,
+				ECF6C54D1BA9EBFD002B456E /* Main.storyboard in Resources */,
+				ECF6C5521BA9EBFD002B456E /* LaunchScreen.xib in Resources */,
+				EC2798CF1BB33BA500B17A53 /* Explosion.sks in Resources */,
+				ECF6C54F1BA9EBFD002B456E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF6C5551BA9EBFE002B456E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF6C53E1BA9EBFD002B456E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD043F21BCB0718006E6AAC /* Global.swift in Sources */,
+				ECF6C59C1BAA0AA4002B456E /* GameViewController.swift in Sources */,
+				EC2C340F1BAA577500BFB4D4 /* GameScene.swift in Sources */,
+				EC5091261BD400DB007FA30F /* Hero.swift in Sources */,
+				ECA7CE781BD4576100DA625C /* HighScoreController.swift in Sources */,
+				ECA7CE761BD4505100DA625C /* HighScore.swift in Sources */,
+				EC8BA68E1BB6FB2400EE7FC5 /* EndGameViewController.swift in Sources */,
+				EC7111DF1BD2C11C0077FE98 /* Cloud.swift in Sources */,
+				EC8BA68F1BB6FB2400EE7FC5 /* StartGameViewController.swift in Sources */,
+				ECF6C5481BA9EBFD002B456E /* AppDelegate.swift in Sources */,
+				ECA7CE7A1BD4A1AE00DA625C /* HighScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF6C5531BA9EBFE002B456E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF6C55E1BA9EBFE002B456E /* IcarusGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF6C5591BA9EBFE002B456E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF6C5411BA9EBFD002B456E /* IcarusGame */;
+			targetProxy = ECF6C5581BA9EBFE002B456E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF6C54B1BA9EBFD002B456E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF6C54C1BA9EBFD002B456E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECF6C5501BA9EBFD002B456E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF6C5511BA9EBFD002B456E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF6C55F1BA9EBFE002B456E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF6C5601BA9EBFE002B456E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF6C5621BA9EBFE002B456E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IcarusGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.ios.advanced.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECF6C5631BA9EBFE002B456E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = IcarusGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.ios.advanced.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECF6C5651BA9EBFE002B456E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IcarusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.ios.advanced.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IcarusGame.app/IcarusGame";
+			};
+			name = Debug;
+		};
+		ECF6C5661BA9EBFE002B456E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IcarusGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cvtc.ios.advanced.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IcarusGame.app/IcarusGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF6C53D1BA9EBFD002B456E /* Build configuration list for PBXProject "IcarusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF6C55F1BA9EBFE002B456E /* Debug */,
+				ECF6C5601BA9EBFE002B456E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF6C5611BA9EBFE002B456E /* Build configuration list for PBXNativeTarget "IcarusGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF6C5621BA9EBFE002B456E /* Debug */,
+				ECF6C5631BA9EBFE002B456E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF6C5641BA9EBFE002B456E /* Build configuration list for PBXNativeTarget "IcarusGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF6C5651BA9EBFE002B456E /* Debug */,
+				ECF6C5661BA9EBFE002B456E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF6C53A1BA9EBFD002B456E /* Project object */;
+}

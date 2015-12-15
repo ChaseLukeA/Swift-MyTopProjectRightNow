@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StartGameView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="StartGameViewController" customModule="IcarusGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="tlF-db-yzR">
+                                <rect key="frame" x="20" y="28" width="560" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tlF-db-yzR" secondAttribute="height" multiplier="28:15" id="Psz-th-fx5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grH-ar-A8E">
+                                <rect key="frame" x="217" y="470" width="166" height="52"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="671-ey-cXS" kind="show" identifier="showGameView" id="wfw-qK-bRZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilt the device to keep Icarus away from the sun." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiy-EV-d5M">
+                                <rect key="frame" x="61" y="364" width="480" height="28"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icarus Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD5-JD-luM">
+                                <rect key="frame" x="125" y="99" width="352" height="81"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="72"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="136"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQt-3e-ZCY">
+                                <rect key="frame" x="61" y="326" width="123" height="28"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                </variation>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U65-6Y-eLH">
+                                <rect key="frame" x="295" y="401" width="10" height="59"/>
+                                <color key="backgroundColor" red="0.57913029193878174" green="0.5791129469871521" blue="0.57912278175354004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-wF-cAY">
+                                <rect key="frame" x="295" y="532" width="10" height="59"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-Dm-61V">
+                                <rect key="frame" x="295" y="30" width="10" height="59"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="Vjt-dG-dcu"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBF-1c-kcq">
+                                <rect key="frame" x="295" y="258" width="10" height="59"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O48-dc-vlK">
+                                <rect key="frame" x="295" y="189" width="10" height="59"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caC-gm-OoO">
+                                <rect key="frame" x="315" y="283" width="112" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                <state key="normal" title="Hard Mode">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="hardModeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVF-mF-Gd8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONm-Dw-bsf">
+                                <rect key="frame" x="174" y="283" width="111" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                <state key="normal" title="Easy Mode">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="easyModeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mF3-9R-GJu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WD-Wm-0bF">
+                                <rect key="frame" x="478" y="478" width="102" height="36"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="High Scores">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="N7v-7J-g9N" kind="popoverPresentation" popoverAnchorView="0WD-Wm-0bF" id="Qot-I4-hZA">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tlF-db-yzR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0UR-ew-PjL"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="width" secondItem="U65-6Y-eLH" secondAttribute="width" id="1I4-OO-6jo"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="height" secondItem="tjt-wF-cAY" secondAttribute="height" id="1eZ-pS-e1i"/>
+                            <constraint firstAttribute="centerX" secondItem="O48-dc-vlK" secondAttribute="centerX" id="3gH-OJ-m9E"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="top" secondItem="O48-dc-vlK" secondAttribute="bottom" constant="10" id="4W1-4d-f72"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="width" secondItem="tjt-wF-cAY" secondAttribute="width" id="76b-8K-drX"/>
+                            <constraint firstAttribute="centerX" secondItem="grH-ar-A8E" secondAttribute="centerX" id="7za-nt-NNF"/>
+                            <constraint firstItem="caC-gm-OoO" firstAttribute="leading" secondItem="sBF-1c-kcq" secondAttribute="trailing" constant="10" id="868-Pn-IlA"/>
+                            <constraint firstItem="U65-6Y-eLH" firstAttribute="top" secondItem="tiy-EV-d5M" secondAttribute="bottom" constant="10" id="APD-Si-WnA"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="centerY" secondItem="caC-gm-OoO" secondAttribute="centerY" id="AUK-08-c05"/>
+                            <constraint firstAttribute="centerX" secondItem="6Uy-Dm-61V" secondAttribute="centerX" id="CKE-Ld-hwD"/>
+                            <constraint firstItem="PQt-3e-ZCY" firstAttribute="top" secondItem="caC-gm-OoO" secondAttribute="bottom" constant="10" id="EcZ-4s-Q49"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="leading" secondItem="ONm-Dw-bsf" secondAttribute="trailing" constant="10" id="FLs-kh-o0E"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="top" secondItem="ONm-Dw-bsf" secondAttribute="top" id="GCA-gw-br9"/>
+                            <constraint firstItem="grH-ar-A8E" firstAttribute="top" secondItem="U65-6Y-eLH" secondAttribute="bottom" constant="10" id="IBL-Y0-VJc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tjt-wF-cAY" secondAttribute="bottom" constant="10" id="IUs-Lu-yTO"/>
+                            <constraint firstItem="tjt-wF-cAY" firstAttribute="top" secondItem="grH-ar-A8E" secondAttribute="bottom" constant="10" id="IoV-2h-ayn"/>
+                            <constraint firstAttribute="centerX" secondItem="sBF-1c-kcq" secondAttribute="centerX" id="KYQ-j2-h4D"/>
+                            <constraint firstItem="O48-dc-vlK" firstAttribute="top" secondItem="hD5-JD-luM" secondAttribute="bottom" constant="10" id="N3x-H4-F6y"/>
+                            <constraint firstItem="tlF-db-yzR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ny9-5f-N2q"/>
+                            <constraint firstItem="PQt-3e-ZCY" firstAttribute="top" secondItem="sBF-1c-kcq" secondAttribute="bottom" constant="10" id="R18-Tm-f7M"/>
+                            <constraint firstItem="tiy-EV-d5M" firstAttribute="leading" secondItem="PQt-3e-ZCY" secondAttribute="leading" id="Sxv-eD-Zbq"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="height" secondItem="6Uy-Dm-61V" secondAttribute="height" id="Tvn-5x-ZdU"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="height" secondItem="O48-dc-vlK" secondAttribute="height" id="WlA-DI-BsN"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="centerY" secondItem="ONm-Dw-bsf" secondAttribute="centerY" id="b0l-V4-ykF"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="width" secondItem="O48-dc-vlK" secondAttribute="width" id="bmc-Fe-Pub"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="top" secondItem="caC-gm-OoO" secondAttribute="top" id="c8l-IO-9kw"/>
+                            <constraint firstItem="ONm-Dw-bsf" firstAttribute="centerY" secondItem="caC-gm-OoO" secondAttribute="centerY" id="dLu-se-vL5"/>
+                            <constraint firstItem="6Uy-Dm-61V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="gIh-CW-8fb"/>
+                            <constraint firstAttribute="centerX" secondItem="hD5-JD-luM" secondAttribute="centerX" id="iAG-Su-i7q"/>
+                            <constraint firstAttribute="centerX" secondItem="U65-6Y-eLH" secondAttribute="centerX" id="iBs-2z-q9o"/>
+                            <constraint firstItem="tlF-db-yzR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jou-Mg-jdH"/>
+                            <constraint firstItem="O48-dc-vlK" firstAttribute="top" secondItem="ONm-Dw-bsf" secondAttribute="top" constant="-26" id="kIl-IU-qWG"/>
+                            <constraint firstItem="0WD-Wm-0bF" firstAttribute="centerY" secondItem="grH-ar-A8E" secondAttribute="centerY" id="ln9-uA-7yV"/>
+                            <constraint firstAttribute="centerX" secondItem="tiy-EV-d5M" secondAttribute="centerX" id="mb7-f2-Swk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0WD-Wm-0bF" secondAttribute="trailing" id="oP4-2L-3lr"/>
+                            <constraint firstItem="hD5-JD-luM" firstAttribute="top" secondItem="6Uy-Dm-61V" secondAttribute="bottom" constant="10" id="p5V-1i-awb"/>
+                            <constraint firstItem="PQt-3e-ZCY" firstAttribute="top" secondItem="ONm-Dw-bsf" secondAttribute="bottom" constant="10" id="q69-9n-jAX"/>
+                            <constraint firstItem="O48-dc-vlK" firstAttribute="bottom" secondItem="ONm-Dw-bsf" secondAttribute="bottom" id="rJW-zp-n2Q"/>
+                            <constraint firstItem="tiy-EV-d5M" firstAttribute="top" secondItem="PQt-3e-ZCY" secondAttribute="bottom" constant="10" id="sPe-oc-XQq"/>
+                            <constraint firstItem="O48-dc-vlK" firstAttribute="bottom" secondItem="ONm-Dw-bsf" secondAttribute="top" constant="-62" id="uQZ-XD-DqE"/>
+                            <constraint firstItem="O48-dc-vlK" firstAttribute="bottom" secondItem="caC-gm-OoO" secondAttribute="bottom" id="whw-Q3-oi6"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="width" secondItem="6Uy-Dm-61V" secondAttribute="width" id="xip-yv-xyk"/>
+                            <constraint firstItem="sBF-1c-kcq" firstAttribute="height" secondItem="U65-6Y-eLH" secondAttribute="height" id="y2w-rW-NLJ"/>
+                            <constraint firstAttribute="centerX" secondItem="tjt-wF-cAY" secondAttribute="centerX" id="zOE-Dp-cAV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kIl-IU-qWG"/>
+                                <exclude reference="rJW-zp-n2Q"/>
+                                <exclude reference="uQZ-XD-DqE"/>
+                                <exclude reference="whw-Q3-oi6"/>
+                                <exclude reference="AUK-08-c05"/>
+                                <exclude reference="GCA-gw-br9"/>
+                                <exclude reference="b0l-V4-ykF"/>
+                                <exclude reference="c8l-IO-9kw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="easyModeButton" destination="ONm-Dw-bsf" id="kPd-ii-UCc"/>
+                        <outlet property="hardModeButton" destination="caC-gm-OoO" id="r8P-fA-Htp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="432"/>
+        </scene>
+        <!--High Score View Controller-->
+        <scene sceneID="k1o-6U-mc9">
+            <objects>
+                <viewController storyboardIdentifier="HighScoreView" title="High Score View Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N7v-7J-g9N" customClass="HighScoreViewController" customModule="IcarusGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YwY-oN-lwH"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7d-hL-elY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Pi-op-5jO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="High Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RQ-Uf-JWB">
+                                <rect key="frame" x="244" y="20" width="113" height="29"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csT-Uy-aBl">
+                                <rect key="frame" x="301" y="57" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ziu-Ne-YZ1">
+                                <rect key="frame" x="544" y="566" width="30" height="14"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="1"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="1"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="JQE-hI-EZ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61754709480000003" green="0.84730613229999996" blue="0.9992197156" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="csT-Uy-aBl" firstAttribute="top" secondItem="8RQ-Uf-JWB" secondAttribute="bottom" constant="8" id="525-Sc-smw"/>
+                            <constraint firstItem="8RQ-Uf-JWB" firstAttribute="centerX" secondItem="7Pi-op-5jO" secondAttribute="centerX" id="AFE-rO-XCe"/>
+                            <constraint firstItem="8RQ-Uf-JWB" firstAttribute="top" secondItem="YwY-oN-lwH" secondAttribute="bottom" id="BcJ-rj-1pv"/>
+                            <constraint firstItem="csT-Uy-aBl" firstAttribute="centerX" secondItem="8RQ-Uf-JWB" secondAttribute="centerX" id="D4g-Be-KKW"/>
+                            <constraint firstItem="8RQ-Uf-JWB" firstAttribute="top" secondItem="7Pi-op-5jO" secondAttribute="topMargin" constant="30" id="TNq-E3-0DN"/>
+                            <constraint firstItem="K7d-hL-elY" firstAttribute="top" secondItem="8RQ-Uf-JWB" secondAttribute="bottom" constant="579" id="cYk-hK-Xdr"/>
+                            <constraint firstItem="K7d-hL-elY" firstAttribute="top" secondItem="Ziu-Ne-YZ1" secondAttribute="bottom" constant="20" id="cke-Y1-VeT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ziu-Ne-YZ1" secondAttribute="trailing" constant="6" id="dJN-mx-K4j"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TNq-E3-0DN"/>
+                                <exclude reference="cYk-hK-Xdr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="csT-Uy-aBl" id="Suu-gk-9kH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnD-nr-gSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="597"/>
+        </scene>
+        <!--End Game View Controller-->
+        <scene sceneID="wIM-h3-Xr0">
+            <objects>
+                <viewController storyboardIdentifier="EndGameView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IEs-Dh-0d0" customClass="EndGameViewController" customModule="IcarusGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Ve-vV-hxA"/>
+                        <viewControllerLayoutGuide type="bottom" id="z9f-Gm-4n8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S1c-pp-tEa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud-2" translatesAutoresizingMaskIntoConstraints="NO" id="nnJ-J8-gEF">
+                                <rect key="frame" x="20" y="20" width="560" height="298"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nnJ-J8-gEF" secondAttribute="height" multiplier="280:149" id="ewJ-yJ-Fqd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lasted 00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-0h-zKV">
+                                <rect key="frame" x="176" y="377" width="249" height="41"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                    <rect key="frame" x="218" y="247" width="167" height="28"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icarus Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSu-hs-VB3">
+                                <rect key="frame" x="125" y="86" width="352" height="81"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="72"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="136"/>
+                                </variation>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upR-Iz-fGh">
+                                <rect key="frame" x="295" y="427" width="10" height="46"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="TUx-dO-U59"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-Nb-1O9">
+                                <rect key="frame" x="295" y="30" width="10" height="46"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="9OY-Yp-Bpv"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz6-54-48r">
+                                <rect key="frame" x="295" y="176" width="10" height="46"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="mPY-Zz-Q32"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIB-4K-RfB">
+                                <rect key="frame" x="295" y="321" width="10" height="46"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="FSY-SN-AUv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5h-k3-iPe">
+                                <rect key="frame" x="95" y="232" width="411" height="80"/>
+                                <string key="text">Sorry!
+You got too close to the sun!</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                    <rect key="frame" x="164" y="237" width="274" height="54"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
+                                </variation>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-sD-sf1">
+                                <rect key="frame" x="295" y="545" width="10" height="46"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="FDy-Ig-FsV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfm-U7-xXM">
+                                <rect key="frame" x="331" y="483" width="174" height="52"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showStartView" id="qVp-N4-OEw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4s-H5-BRe">
+                                <rect key="frame" x="96" y="483" width="159" height="52"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="95" y="483" width="134" height="52"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="56"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="671-ey-cXS" kind="show" identifier="showGameView" id="pyh-UT-fEX"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x86-Al-nyS">
+                                <rect key="frame" x="30" y="504" width="56" height="10"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="ylX-jF-9eu"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ly6-hD-nRs">
+                                <rect key="frame" x="515" y="504" width="56" height="10"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="npx-R5-Ot5"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACd-WP-n4F">
+                                <rect key="frame" x="265" y="504" width="56" height="10"/>
+                                <color key="backgroundColor" red="0.57913029189999998" green="0.57911294700000004" blue="0.57912278179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="5Bo-2h-R9R"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="264" y="504" width="0.0" height="10"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nnJ-J8-gEF" secondAttribute="trailing" id="2fh-nQ-nVk"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="top" secondItem="upR-Iz-fGh" secondAttribute="bottom" constant="10" id="2lp-1y-gE1"/>
+                            <constraint firstItem="Ly6-hD-nRs" firstAttribute="leading" secondItem="Bfm-U7-xXM" secondAttribute="trailing" constant="10" id="31W-3z-x0t"/>
+                            <constraint firstAttribute="centerX" secondItem="upR-Iz-fGh" secondAttribute="centerX" id="3bd-Xn-5EP"/>
+                            <constraint firstItem="x86-Al-nyS" firstAttribute="leading" secondItem="S1c-pp-tEa" secondAttribute="leadingMargin" constant="10" id="4bh-oj-pWr"/>
+                            <constraint firstAttribute="centerX" secondItem="d4s-H5-BRe" secondAttribute="centerX" id="4cX-5H-tD3"/>
+                            <constraint firstItem="nnJ-J8-gEF" firstAttribute="leading" secondItem="S1c-pp-tEa" secondAttribute="leadingMargin" id="5CA-UF-gHe"/>
+                            <constraint firstAttribute="centerX" secondItem="F5h-k3-iPe" secondAttribute="centerX" id="5Ei-9y-t5h"/>
+                            <constraint firstAttribute="centerX" secondItem="NQw-sD-sf1" secondAttribute="centerX" id="66k-st-sPR"/>
+                            <constraint firstItem="d4s-H5-BRe" firstAttribute="leading" secondItem="x86-Al-nyS" secondAttribute="trailing" constant="10" id="ADL-UH-QyS"/>
+                            <constraint firstItem="x86-Al-nyS" firstAttribute="width" secondItem="Ly6-hD-nRs" secondAttribute="width" id="Dkn-qI-q0Q"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="top" secondItem="d4s-H5-BRe" secondAttribute="bottom" constant="10" id="GEm-Uu-XSb"/>
+                            <constraint firstItem="uIB-4K-RfB" firstAttribute="top" secondItem="F5h-k3-iPe" secondAttribute="bottom" constant="10" id="HUr-Jz-h3u"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="centerY" secondItem="ACd-WP-n4F" secondAttribute="centerY" id="KMj-Ge-rfq"/>
+                            <constraint firstItem="ACd-WP-n4F" firstAttribute="leading" secondItem="d4s-H5-BRe" secondAttribute="trailing" constant="10" id="NMe-Wu-zMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ly6-hD-nRs" secondAttribute="trailing" constant="10" id="QEB-U2-I9w"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="centerY" secondItem="Ly6-hD-nRs" secondAttribute="centerY" id="RvG-OL-avN"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="height" secondItem="upR-Iz-fGh" secondAttribute="height" id="Sxm-e1-9VI"/>
+                            <constraint firstItem="d4s-H5-BRe" firstAttribute="top" secondItem="upR-Iz-fGh" secondAttribute="bottom" constant="10" id="U9y-1X-4KZ"/>
+                            <constraint firstItem="z9f-Gm-4n8" firstAttribute="top" secondItem="NQw-sD-sf1" secondAttribute="bottom" constant="10" id="VXc-BA-WcJ"/>
+                            <constraint firstItem="nnJ-J8-gEF" firstAttribute="top" secondItem="3Ve-vV-hxA" secondAttribute="bottom" id="XwP-hz-q9Y"/>
+                            <constraint firstAttribute="centerX" secondItem="JAr-0h-zKV" secondAttribute="centerX" id="YDg-Mq-erh"/>
+                            <constraint firstAttribute="centerX" secondItem="lhd-Nb-1O9" secondAttribute="centerX" id="aPG-OB-Mke"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="top" secondItem="Bfm-U7-xXM" secondAttribute="bottom" constant="10" id="ciA-Yo-mjU"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="leading" secondItem="ACd-WP-n4F" secondAttribute="trailing" constant="10" id="epo-xX-g09"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="centerY" secondItem="x86-Al-nyS" secondAttribute="centerY" id="hbI-ik-rm3"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="height" secondItem="Sz6-54-48r" secondAttribute="height" id="kA4-me-Geh"/>
+                            <constraint firstItem="JAr-0h-zKV" firstAttribute="top" secondItem="uIB-4K-RfB" secondAttribute="bottom" constant="10" id="lHP-0H-YWt"/>
+                            <constraint firstAttribute="centerX" secondItem="dSu-hs-VB3" secondAttribute="centerX" id="mAW-br-2Pm"/>
+                            <constraint firstAttribute="centerX" secondItem="Sz6-54-48r" secondAttribute="centerX" id="oNc-cN-Ih7"/>
+                            <constraint firstItem="dSu-hs-VB3" firstAttribute="top" secondItem="lhd-Nb-1O9" secondAttribute="bottom" constant="10" id="oat-pd-AUG"/>
+                            <constraint firstItem="Sz6-54-48r" firstAttribute="top" secondItem="dSu-hs-VB3" secondAttribute="bottom" constant="10" id="pf2-Rp-C1B"/>
+                            <constraint firstItem="lhd-Nb-1O9" firstAttribute="top" secondItem="3Ve-vV-hxA" secondAttribute="bottom" constant="10" id="qW3-GN-gsL"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="height" secondItem="uIB-4K-RfB" secondAttribute="height" id="rbA-AQ-hvu"/>
+                            <constraint firstItem="Bfm-U7-xXM" firstAttribute="centerY" secondItem="d4s-H5-BRe" secondAttribute="centerY" id="rtA-JK-Nub"/>
+                            <constraint firstItem="x86-Al-nyS" firstAttribute="width" secondItem="ACd-WP-n4F" secondAttribute="width" id="uM1-H7-cwR"/>
+                            <constraint firstItem="F5h-k3-iPe" firstAttribute="top" secondItem="Sz6-54-48r" secondAttribute="bottom" constant="10" id="utc-7G-a56"/>
+                            <constraint firstItem="upR-Iz-fGh" firstAttribute="top" secondItem="JAr-0h-zKV" secondAttribute="bottom" constant="10" id="w9U-n5-oUS"/>
+                            <constraint firstAttribute="centerX" secondItem="uIB-4K-RfB" secondAttribute="centerX" id="yCX-96-7AX"/>
+                            <constraint firstItem="NQw-sD-sf1" firstAttribute="height" secondItem="lhd-Nb-1O9" secondAttribute="height" id="ynb-CL-iIw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4cX-5H-tD3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="timePlayedLabel" destination="JAr-0h-zKV" id="huf-jw-NZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jd6-2D-BIb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="-316"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="lb5-Gl-sIm">
+            <objects>
+                <viewController storyboardIdentifier="GameView" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="671-ey-cXS" customClass="GameViewController" customModule="IcarusGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Apj-BE-Gaf"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nc-Aa-hHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXd-D4-T62" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time - 00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QX-Na-g2z">
+                                <rect key="frame" x="209" y="25" width="183" height="26"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szf-RD-myG">
+                                <rect key="frame" x="285" y="288" width="30" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="385" y="389" width="30" height="24"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="IEs-Dh-0d0" kind="show" identifier="showEndGameView" id="xNc-eW-bdw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWF-FP-aTK">
+                                <rect key="frame" x="22" y="555" width="51" height="26"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxu-lB-1Lb">
+                                <rect key="frame" x="20" y="536" width="53" height="19"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="10"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg4-Up-nxC">
+                                <rect key="frame" x="550" y="532" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="II">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pauseButtonPushed:" destination="671-ey-cXS" eventType="touchUpInside" id="wzC-di-m2d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rg4-Up-nxC" secondAttribute="trailing" id="3KR-2q-OiW"/>
+                            <constraint firstAttribute="centerY" secondItem="szf-RD-myG" secondAttribute="centerY" id="5dm-EG-RBY"/>
+                            <constraint firstAttribute="centerX" secondItem="2QX-Na-g2z" secondAttribute="centerX" id="BTU-am-v0s"/>
+                            <constraint firstAttribute="centerX" secondItem="szf-RD-myG" secondAttribute="centerX" id="FLp-nn-Bjg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mWF-FP-aTK" secondAttribute="leading" id="Hf7-Fl-9oR"/>
+                            <constraint firstItem="7nc-Aa-hHL" firstAttribute="top" secondItem="Rg4-Up-nxC" secondAttribute="bottom" constant="20" id="Qnd-sM-Aeq"/>
+                            <constraint firstAttribute="centerY" secondItem="2QX-Na-g2z" secondAttribute="centerY" id="YDR-Bt-K2D"/>
+                            <constraint firstAttribute="centerX" secondItem="szf-RD-myG" secondAttribute="centerX" id="aek-ja-T5E"/>
+                            <constraint firstItem="2QX-Na-g2z" firstAttribute="top" secondItem="Apj-BE-Gaf" secondAttribute="bottom" constant="5" id="fR4-fe-KrQ"/>
+                            <constraint firstItem="7nc-Aa-hHL" firstAttribute="top" secondItem="mWF-FP-aTK" secondAttribute="bottom" constant="20" id="ggf-UR-L2f"/>
+                            <constraint firstItem="mWF-FP-aTK" firstAttribute="top" secondItem="yxu-lB-1Lb" secondAttribute="bottom" id="hDu-zt-6gf"/>
+                            <constraint firstItem="2QX-Na-g2z" firstAttribute="top" secondItem="Apj-BE-Gaf" secondAttribute="bottom" id="lcJ-kC-6yK"/>
+                            <constraint firstItem="mWF-FP-aTK" firstAttribute="centerX" secondItem="yxu-lB-1Lb" secondAttribute="centerX" id="nzG-H2-CVo"/>
+                            <constraint firstAttribute="centerY" secondItem="szf-RD-myG" secondAttribute="centerY" id="qWo-TZ-ku1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yxu-lB-1Lb" secondAttribute="leading" id="tSL-Dj-YRP"/>
+                            <constraint firstAttribute="centerX" secondItem="2QX-Na-g2z" secondAttribute="centerX" id="zWG-9L-x8w"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BTU-am-v0s"/>
+                                <exclude reference="YDR-Bt-K2D"/>
+                                <exclude reference="lcJ-kC-6yK"/>
+                                <exclude reference="FLp-nn-Bjg"/>
+                                <exclude reference="qWo-TZ-ku1"/>
+                                <exclude reference="Hf7-Fl-9oR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="currentHealth" destination="mWF-FP-aTK" id="AFk-Cg-VxY"/>
+                        <outlet property="gameCurrentTimeLabel" destination="2QX-Na-g2z" id="D34-9s-0gz"/>
+                        <outlet property="pauseButton" destination="Rg4-Up-nxC" id="14C-fB-zDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zss-2h-Q1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="-121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cloud-1" width="700" height="375"/>
+        <image name="Cloud-2" width="700" height="375"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JQE-hI-EZ7"/>
+        <segue reference="wfw-qK-bRZ"/>
+    </inferredMetricsTieBreakers>
+</document>
